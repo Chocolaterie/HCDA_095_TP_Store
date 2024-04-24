@@ -52,6 +52,7 @@ public class ArticleRestController {
 	public Boolean deleteArticle(
 			@Parameter(description = "ID de l'article à supprimer", required = true)
 			@PathVariable("uid") String uid){
-		return articleService.remove(uid);
+    	return false;
+    	//return articleService.remove(uid);
 	}
 }
